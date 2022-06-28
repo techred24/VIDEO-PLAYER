@@ -27,8 +27,8 @@ function skip (e) {
     video.currentTime += parseFloat(this.dataset.skip);
 }
 function rangeUpdate () {
-    console.log(this.name);
-    console.log(this.value);
+    // console.log(this.name);
+    // console.log(this.value);
     video[this.name] = this.value;
 }
 function handleProgress () {

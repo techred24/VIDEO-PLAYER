@@ -1,9 +1,20 @@
 body {
     margin: 0;
+    background-color: #121212;
+}
+.player {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.player__controls {
+    width: 100%;
 }
 .player__video {
     cursor: pointer;
     display: block;
+    width: 100%;
+    height: auto;
 }
 .player__button {
     cursor: pointer;
@@ -14,4 +25,18 @@ body {
 .progress__filled {
     height: 10px;
     background-color: brown;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+}
+.progress__filled:hover::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    top: -2px;
+    background-color: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
 }
