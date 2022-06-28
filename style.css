@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+.player__video {
+    cursor: pointer;
+    display: block;
+}
+.player__button {
+    cursor: pointer;
+}
+.progress {
+    cursor: pointer;
+}
+.progress__filled {
+    height: 10px;
+    background-color: brown;
+}
