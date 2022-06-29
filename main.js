@@ -62,4 +62,16 @@ progress.addEventListener('mousedown', () => click=true);
 progress.addEventListener('mouseup', () => click=false);
 
 
-const slider = document.querySelector('input[]')
+const slider = document.querySelector('input[name="volume"]');
+const output = document.getElementById('value');
+
+// slider.oninput = function() {
+//     console.log(this.value)
+// }
+slider.addEventListener('mousemove', function() {
+    let x = slider.value;
+    let color = `linear-gradient(90deg, #FFFFFF ${x*100}%, #5E5E5E ${x*100}%)`;
+    slider.style.background = color;
+    // linear-gradient(90deg, #FFFFFF 25%, #5E5E5E 25%)
+    // console.log(x);
+})
