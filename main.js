@@ -7,6 +7,10 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
+document.addEventListener('DOMContentLoaded', function() {
+    const volume = player.querySelector('input[name="volume"]');
+    video.volume = volume.value;
+})
 // Crear las funciones 
 function togglePlay() {
     if (video.paused) {
