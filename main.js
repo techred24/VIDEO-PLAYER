@@ -60,3 +60,6 @@ progress.addEventListener('mousemove', (e) => {
 });
 progress.addEventListener('mousedown', () => click=true);
 progress.addEventListener('mouseup', () => click=false);
+
+
+const slider = document.querySelector('input[]')
