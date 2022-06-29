@@ -67,3 +67,38 @@ input[name='volume']::-moz-range-thumb {
     border-radius: 50%;
     cursor: pointer;
 }
+
+
+.volume-container {
+    cursor: pointer;
+    margin: 20px 0;
+    height: 5px;
+    width: 130px;
+    background-color: #5E5E5E;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.volume-container:hover::after {
+    content: '';
+    background-color: #FFFFFF;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 6px);
+}
+.volume-slider {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.volume-container:hover .volume-slider {
+    background-color: #1ED760;
+}

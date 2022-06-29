@@ -7,10 +7,6 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const volume = player.querySelector('input[name="volume"]');
-    video.volume = volume.value;
-})
 // Crear las funciones 
 function togglePlay() {
     if (video.paused) {
@@ -66,16 +62,4 @@ progress.addEventListener('mousedown', () => click=true);
 progress.addEventListener('mouseup', () => click=false);
 
 
-const slider = document.querySelector('input[name="volume"]');
-const output = document.getElementById('value');
-
-// slider.oninput = function() {
-//     console.log(this.value)
-// }
-slider.addEventListener('mousemove', function() {
-    let x = slider.value;
-    let color = `linear-gradient(90deg, #FFFFFF ${x*100}%, #5E5E5E ${x*100}%)`;
-    slider.style.background = color;
-    // linear-gradient(90deg, #FFFFFF 25%, #5E5E5E 25%)
-    // console.log(x);
-})
+// const slider = document.querySelector('input[
